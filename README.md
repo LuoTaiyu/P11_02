@@ -17,11 +17,14 @@
 
 ```text
 P11_02/
-├── P11_心脏病风险动态预测.ipynb  # 已执行的主 Notebook，包含完整结果和交互面板
-├── P11_01.pdf                    # 项目分析文档
-├── heart+disease/                # UCI 原始数据及字段说明
+├── P11_心脏病风险动态预测01.ipynb  # 推荐：优化面板的新版本，已执行并保存结果
+├── P11_心脏病风险动态预测.ipynb    # 保留的原始版本
+├── P11_01.pdf                      # 项目分析文档
+├── heart+disease/                  # UCI 原始数据及字段说明
 └── README.md
 ```
+
+01 版新增低/高风险示例一键填入、恢复默认、自动/手动预测模式和更紧凑的输入布局，并使用轻量 HTML 概率条避免小型图表的布局警告。
 
 ## 运行方法
 
@@ -29,10 +32,10 @@ P11_02/
 
 ```bash
 python -m pip install numpy pandas matplotlib seaborn scikit-learn ipywidgets notebook
-jupyter notebook "P11_心脏病风险动态预测.ipynb"
+jupyter notebook "P11_心脏病风险动态预测01.ipynb"
 ```
 
-在 Jupyter 中选择 **Kernel → Restart & Run All**，然后滚动到“**6. 动态输入新数据并现场预测**”。修改任一输入后，预测概率和分类结果会自动更新。
+在 Jupyter 中选择 **Kernel → Restart & Run All**，然后滚动到“**6. 动态输入新数据并现场预测（优化版 01）**”。可点击示例按钮快速填入病例；默认修改任一输入后自动预测，也可关闭自动模式，批量修改后点击“立即预测”。
 
 请保持 Notebook 与 `heart+disease` 文件夹的相对位置不变。Notebook 已保存执行结果，未安装 Jupyter 时也可以直接在 GitHub 上查看主要分析内容；交互预测需要在本地 Jupyter 环境中运行。
 
