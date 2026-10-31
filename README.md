@@ -19,7 +19,6 @@
 P11_02/
 ├── P11_心脏病风险动态预测.ipynb  # 已执行的主 Notebook，包含完整结果和交互面板
 ├── P11_01.pdf                    # 项目分析文档
-├── P11题目.png                   # 项目题目
 ├── heart+disease/                # UCI 原始数据及字段说明
 └── README.md
 ```
